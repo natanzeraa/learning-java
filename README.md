@@ -57,7 +57,7 @@
     short maratonSteps = 32767;
     long centimetersRunned = 9223372036854775807L;
 
-You can see the variables file here: [Variables.java](https://github.com/natanzeraa/java-basics/blob/Variables)
+You can see the variables file here: [Variables.java](https://github.com/natanzeraa/learning-java/blob/main/Variables.java)
 
 ---
 
@@ -91,7 +91,7 @@ You can see the variables file here: [Variables.java](https://github.com/natanze
 
 **Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive](#types) types.*
 
-You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/java-basics/blob/Lists)
+You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/learning-java/blob/main/Lists.java)
 
 ---
 
@@ -154,7 +154,7 @@ int b = 10;
     } while(a < b);
 
 
-You can see the loops file here: [Loops.java](https://github.com/natanzeraa/java-basics/blob/Loops)
+You can see the loops file here: [Loops.java](https://github.com/natanzeraa/learning-java/blob/main/Loops.java)
 
 ---
 
@@ -257,7 +257,7 @@ You can see the loops file here: [Loops.java](https://github.com/natanzeraa/java
 [//]: # (    })
 
 [//]: # ()
-[//]: # (You can see the methods file here: [Methods.java]&#40;https://github.com/natanzeraa/java-basics/blob/Methods&#41;)
+[//]: # (You can see the methods file here: [Methods.java]&#40;https://github.com/natanzeraa/learning-java/blob/main/Methods.java&#41;)
 
 [//]: # ()
 [//]: # (---)
