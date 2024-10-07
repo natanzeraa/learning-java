@@ -23,7 +23,7 @@
 ---
 
 <a id="types"></a>
-### Primitive and Non-Primitive types
+## Primitive types
 
         Data Type       Size	    Description
 
@@ -37,7 +37,7 @@
         char	    2 bytes	    Stores a single character/letter or ASCII values
 
 ---
-### Variables
+## Variables
 
 *Variables are ways to store data in the program memory, so it can be manipulated in many ways.*
 
@@ -57,12 +57,12 @@
     short maratonSteps = 32767;
     long centimetersRunned = 9223372036854775807L;
 
-You can see the variables file here: [Variables.java](https://github.com/natanzeraa/java-basics/blob/main/src/basics/Variables)
+You can see the variables file here: [Variables.java](https://github.com/natanzeraa/java-basics/blob/Variables)
 
 ---
 
 <a id="arrays"></a>
-### Arrays
+## Arrays
 
 *Arrays are one of the most important and used data structure, if you have any contact with programming languages, it's quit impossible to not use a list, array or whatever the language you're learning calls it.*
 
@@ -91,93 +91,173 @@ You can see the variables file here: [Variables.java](https://github.com/natanze
 
 **Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive](#types) types.*
 
-You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/java-basics/blob/main/src/basics/Lists)
+You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/java-basics/blob/Lists)
 
 ---
 
-### Loops
+## Loops
 
 *Loops are ways to iterate over a list of any type or even a certain amount of times given by an integer number.*
 
 *But first you might understand how it works and how to write it correctly:*
 
-1. For Loop
+### For Loop
 
+    for (statement 1; statement 2; statement 3) {
+        // code here
+    }
 
-        for (statement 1; statement 2; statement 3) {
-            // code here
-        }
+- statement 1 sets the variable before the code starts
+- statement 2 defines a condition for the loop
+- statement 3 increases the variable set in the statement 1 every time the loop runs
 
-   - statement 1 sets the variable before the code starts
-   - statement 2 defines a condition for the loop
-   - statement 3 increases the variable set in the statement 1 every time the loop runs
-
-    *Example:*
+**Example:**
     
-        int age = 26;
-        for(var i = 0; i < age; i++){
-            System.out.println(i);
-        }
+    int age = 26;
+    for(var i = 0; i < age; i++){
+        System.out.println(i);
+    }
 
-You can see the loops file here: [Loops.java](https://github.com/natanzeraa/java-basics/blob/main/src/basics/Loops)
+### While Loop
 
----
+    while (statement) {
+        // code here
+    }
 
-### Methods
+- statement defines a condition for the loop
 
-*Methods, are a block of code that only runs when it is called,*
-*they accept external data also known as parameters.*
-*Some languages can call methods as functions, because can execute certain actions.*
+**Example:**
+    
+    int y = 0;
+    int x = 10;
+    
+    while(y < x) {
+        System.out.println(y++);
+    }
+
+### Do While Loop
+
+    do {
+        // code here
+    } while(statement);
+
+- do block defines where the code block to be executed
+- statement defines a condition for the loop
 
 **Example:**
 
-    public String showSomeText() {
-        return "This is a text";
-    }
+int a = 0;
+int b = 10;
 
-*The code above is a method that returns a text.* 
-*As you can see it does not take any parameters*
+    do {
+        System.out.println(a++);
+    } while(a < b);
 
-*Now lets see a method that actually takes parameters.*
 
-**Example:**
-
-    public int sumOfTwoValues(int a, int b) {
-        return a + b;
-    }
-
-*As you can see, this method is receiving two parameters and executing a sum of the two values.*
-
-*But now you must be asking yourself: How do I make this work? How do I use it?*
-
-*To use this method correctly, take a look at this example:*
-
-    public class Methods {
-        public static String someMethod(String argument) {
-            return argument;
-        }
-    
-        public static void main(String[] args) {
-            String argument = someMethod("This is an argument!");
-            System.out.println(argument);
-        }
-    }
-
-**Example II:**
-    
-    public class Methods {
-        public static void main(String[] args) {
-            Sum sum = new Sum();
-            sum.sumOfTwoValues(10, 35);
-        }
-    }
-
-    class Sum {
-        public int sumOfTwoValues(int a, int b) {
-            return a + b;
-        }
-    }
-
-You can see the methods file here: [Methods.java](https://github.com/natanzeraa/java-basics/blob/main/src/basics/Methods)
+You can see the loops file here: [Loops.java](https://github.com/natanzeraa/java-basics/blob/Loops)
 
 ---
+
+
+
+---
+
+[//]: # ()
+[//]: # (## Methods)
+
+[//]: # ()
+[//]: # (*Methods, are a block of code that only runs when it is called,*)
+
+[//]: # (*they accept external data also known as parameters.*)
+
+[//]: # (*Some languages can call methods as functions, because can execute certain actions.*)
+
+[//]: # ()
+[//]: # (**Example:**)
+
+[//]: # ()
+[//]: # (    public String showSomeText&#40;&#41; {)
+
+[//]: # (        return "This is a text";)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (*The code above is a method that returns a text.* )
+
+[//]: # (*As you can see it does not take any parameters*)
+
+[//]: # ()
+[//]: # (*Now lets see a method that actually takes parameters.*)
+
+[//]: # ()
+[//]: # (**Example:**)
+
+[//]: # ()
+[//]: # (    public int sumOfTwoValues&#40;int a, int b&#41; {)
+
+[//]: # (        return a + b;)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (*As you can see, this method is receiving two parameters and executing a sum of the two values.*)
+
+[//]: # ()
+[//]: # (*But now you must be asking yourself: How do I make this work? How do I use it?*)
+
+[//]: # ()
+[//]: # (*To use this method correctly, take a look at this example:*)
+
+[//]: # ()
+[//]: # (    public class Methods {)
+
+[//]: # (        public static String someMethod&#40;String argument&#41; {)
+
+[//]: # (            return argument;)
+
+[//]: # (        })
+
+[//]: # (    )
+[//]: # (        public static void main&#40;String[] args&#41; {)
+
+[//]: # (            String argument = someMethod&#40;"This is an argument!"&#41;;)
+
+[//]: # (            System.out.println&#40;argument&#41;;)
+
+[//]: # (        })
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (**Example II:**)
+
+[//]: # (    )
+[//]: # (    public class Methods {)
+
+[//]: # (        public static void main&#40;String[] args&#41; {)
+
+[//]: # (            Sum sum = new Sum&#40;&#41;;)
+
+[//]: # (            sum.sumOfTwoValues&#40;10, 35&#41;;)
+
+[//]: # (        })
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (    class Sum {)
+
+[//]: # (        public int sumOfTwoValues&#40;int a, int b&#41; {)
+
+[//]: # (            return a + b;)
+
+[//]: # (        })
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (You can see the methods file here: [Methods.java]&#40;https://github.com/natanzeraa/java-basics/blob/Methods&#41;)
+
+[//]: # ()
+[//]: # (---)
