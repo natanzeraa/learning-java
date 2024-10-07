@@ -1,6 +1,7 @@
+import java.util.Arrays;
 import java.util.ArrayList;
 
-public class Arrays {
+public class Lists {
     public static void main(String[] args) {
         String[] strArr = new String[2];
         strArr[0] = "Word 01";
@@ -37,6 +38,7 @@ class ArrayLists{
         ArrayList<Integer> ages = new ArrayList<>();
         ArrayList<Float> weights = new ArrayList<>();
         ArrayList<Double> heights = new ArrayList<>();
+        ArrayList<String> brands = new ArrayList<>(Arrays.asList("Apple", "Microsoft", "Nvidia"));
 
         names.add("Jon");
         ages.add(34);
@@ -47,5 +49,6 @@ class ArrayLists{
         ages.remove(0);
         weights.size();
         heights.contains(1.85);
+        brands.set(1, "Amazon");
     }
 }
