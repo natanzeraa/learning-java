@@ -23,7 +23,7 @@
 ---
 
 <a id="types"></a>
-## Primitive types
+## Primitive Data Types
 
         Data Type       Size	    Description
 
@@ -37,15 +37,29 @@
         char	    2 bytes	    Stores a single character/letter or ASCII values
 
 ---
+
+### Non-Primitive Data Types
+
+Non-primitive data types are called reference types because they refer to objects.
+
+The main difference between primitive and non-primitive data types are:
+
+Primitive types are predefined (already defined) in Java. Non-primitive types are created by the programmer and is not defined by Java (except for String).
+Non-primitive types can be used to call methods to perform certain operations, while primitive types cannot.
+A primitive type always has a value, while non-primitive types can be null.
+A primitive type starts with a lowercase letter, while non-primitive types starts with an uppercase letter.
+Examples of non-primitive types are Strings, Arrays, Classes, Interface, etc.
+
+---
 ## Variables
 
-*Variables are ways to store data in the program memory, so it can be manipulated in many ways.*
+Variables are ways to store data in the program memory, so it can be manipulated in many ways.
 
-*But first you need to "start" a variable in order to store some value. In Java you can do this by following this structure:*
+But first you need to "start" a variable in order to store some value. In Java you can do this by following this structure:
 
 **Type variableName = value;**
 
-*Here's an example:*
+**Example:**
 
     String name = "Eliud Kipchoge";
     char gender = 'M';
@@ -64,30 +78,30 @@ You can see the variables file here: [Variables.java](https://github.com/natanze
 <a id="arrays"></a>
 ## Arrays
 
-*Arrays are one of the most important and used data structure, if you have any contact with programming languages, it's quit impossible to not use a list, array or whatever the language you're learning calls it.*
+Arrays are one of the most important and used data structure, if you have any contact with programming languages, it's quit impossible to not use a list, array or whatever the language you're learning calls it.
 
-*Basically arrays are ways to store "a list of multiple elements" in a single variable.*
+Basically in Java, arrays are a way to store "a list of multiple elements" of the same type in a single variable.
 
-*For example: imagine that you have a lottery app, and wants to store lucky numbers in it. The structure to do it is the following:*
+For example: imagine that you have a lottery app, and wants to store lucky numbers in it. The structure to do it is the following:
 
 **type[] arrayName = new type[intNumber];**
 
-1. *Declare the type of the array (String, int, float, char, long, short, byte, etc...) and add the "[]" to indicate it is an array*
-2. *Give it a name, it can be whatever you want, since it follows the camel case rules ( likeThisOneRightHere )*
-3. *You need initialize the array by typing ( new type[intNumber] ), this is necessary to initialize and indicate how many elements will be stored in the array.*
+1. Declare the type of the array (String, int, float, char, long, short, byte, etc...) and add the "[]" to indicate it is an array
+2. Give it a name, it can be whatever you want, since it follows the camel case rules ( likeThisOneRightHere )
+3. You need initialize the array by typing ( new type[intNumber] ), this is necessary to initialize and indicate how many elements will be stored in the array.
 
-*Here's an example:*
+**Example:**
 
     int[] intArr = new int[3];
  
-*You can add elements to the java array by doing this:*
+You can add elements to the java array by doing this:
 
         intArr[0] = 5;
         intArr[1] = 16;
         intArr[2] = 87;
 
-1. *Define the position of the element to be inserted ( intArr[0] )*
-2. *Give it a value respecting its type*
+1. Define the position of the element to be inserted ( intArr[0] )
+2. Give it a value respecting its type
 
 **Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive](#types) types.*
 
@@ -95,11 +109,48 @@ You can see the arrays file here: [Arrays.java](https://github.com/natanzeraa/le
 
 ---
 
+### Array List
+
+This is also an array but a little bit different way to work with.
+Basically Array Lists are dynamic arrays, you don't need to predefine its length.
+
+Every Array List is gonna store a certain type of elements, and it can be any type available in Java.
+
+You can add and remove as many elements as you want, and everything is ok!
+
+**Structure**
+
+    ArrayList<type> variableName = new ArrayList<type>();
+
+- Declare ArrayList type first
+- Than write what type of elements its gonna store
+- Declare the variable name
+- And initialize the array
+
+You can also initialize it with or without values in it.
+
+**Structure:**
+
+    ArrayList<type> variableName = new ArrayList<type>(Arrays.asList(values, separated, by, comma));
+
+- Do the same as the first one
+- Import Arrays from java.util.Arrays
+- Call the asList() method
+- Pass the values separating them by comma
+
+**Example:**
+
+    ArrayList<String> brands = new ArrayList<>(Arrays.asList("Apple", "Microsoft", "Nvidia"));
+
+You can see the arrays file here: [Arrays.java](https://github.com/natanzeraa/learning-java/blob/main/Arrays.java)
+
+---
+
 ## Loops
 
-*Loops are ways to iterate over a list of any type or even a certain amount of times given by an integer number.*
+Loops are ways to iterate over a list of any type or even a certain amount of times given by an integer number.
 
-*But first you might understand how it works and how to write it correctly:*
+But first you might understand how it works and how to write it correctly:
 
 ### For Loop
 
