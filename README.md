@@ -75,143 +75,226 @@ You can see the variables file here: [Variables.java](https://github.com/natanze
 
 ---
 
-<a id="arrays"></a>
-## Arrays
+[//]: # ()
+[//]: # (<a id="arrays"></a>)
 
-Arrays are one of the most important and used data structure, if you have any contact with programming languages, it's quit impossible to not use a list, array or whatever the language you're learning calls it.
+[//]: # (## Arrays)
 
-Basically in Java, arrays are a way to store "a list of multiple elements" of the same type in a single variable.
+[//]: # ()
+[//]: # (Arrays are one of the most important and used data structure, if you have any contact with programming languages, it's quit impossible to not use a list, array or whatever the language you're learning calls it.)
 
-For example: imagine that you have a lottery app, and wants to store lucky numbers in it. The structure to do it is the following:
+[//]: # ()
+[//]: # (Basically in Java, arrays are a way to store "a list of multiple elements" of the same type in a single variable.)
 
-**type[] arrayName = new type[intNumber];**
+[//]: # ()
+[//]: # (For example: imagine that you have a lottery app, and wants to store lucky numbers in it. The structure to do it is the following:)
 
-1. Declare the type of the array (String, int, float, char, long, short, byte, etc...) and add the "[]" to indicate it is an array
-2. Give it a name, it can be whatever you want, since it follows the camel case rules ( likeThisOneRightHere )
-3. You need initialize the array by typing ( new type[intNumber] ), this is necessary to initialize and indicate how many elements will be stored in the array.
+[//]: # ()
+[//]: # (**type[] arrayName = new type[intNumber];**)
 
-**Example:**
+[//]: # ()
+[//]: # (1. Declare the type of the array &#40;String, int, float, char, long, short, byte, etc...&#41; and add the "[]" to indicate it is an array)
 
-    int[] intArr = new int[3];
- 
-You can add elements to the java array by doing this:
+[//]: # (2. Give it a name, it can be whatever you want, since it follows the camel case rules &#40; likeThisOneRightHere &#41;)
 
-        intArr[0] = 5;
-        intArr[1] = 16;
-        intArr[2] = 87;
+[//]: # (3. You need initialize the array by typing &#40; new type[intNumber] &#41;, this is necessary to initialize and indicate how many elements will be stored in the array.)
 
-1. Define the position of the element to be inserted ( intArr[0] )
-2. Give it a value respecting its type
+[//]: # ()
+[//]: # (**Example:**)
 
-**Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive](#types) types.*
+[//]: # ()
+[//]: # (    int[] intArr = new int[3];)
 
-You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/learning-java/blob/main/Lists.java)
+[//]: # ( )
+[//]: # (You can add elements to the java array by doing this:)
 
----
+[//]: # ()
+[//]: # (        intArr[0] = 5;)
 
-### Array List
+[//]: # (        intArr[1] = 16;)
 
-This is also an array but a little bit different way to work with.
-Basically Array Lists are dynamic arrays, you don't need to predefine its length.
+[//]: # (        intArr[2] = 87;)
 
-Every Array List is gonna store a certain type of elements, and it can be any type available in Java.
+[//]: # ()
+[//]: # (1. Define the position of the element to be inserted &#40; intArr[0] &#41;)
 
-You can add and remove as many elements as you want, and everything is ok!
+[//]: # (2. Give it a value respecting its type)
 
-**Structure**
+[//]: # ()
+[//]: # (**Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive]&#40;#types&#41; types.*)
 
-    ArrayList<type> variableName = new ArrayList<type>();
+[//]: # ()
+[//]: # (You can see the arrays file here: [Lists.java]&#40;https://github.com/natanzeraa/learning-java/blob/main/Lists.java&#41;)
 
-- Declare ArrayList type first
-- Than write what type of elements its gonna store
-- Declare the variable name
-- And initialize the array
+[//]: # ()
+[//]: # (---)
 
-You can also initialize it with or without values in it.
+[//]: # ()
+[//]: # (### Array List)
 
-**Structure:**
+[//]: # ()
+[//]: # (This is also an array but a little bit different way to work with.)
 
-    ArrayList<type> variableName = new ArrayList<type>(Arrays.asList(values, separated, by, comma));
+[//]: # (Basically Array Lists are dynamic arrays, you don't need to predefine its length.)
 
-- Do the same as the first one
-- Import Arrays from java.util.Arrays
-- Call the asList() method
-- Pass the values separating them by comma
+[//]: # ()
+[//]: # (Every Array List is gonna store a certain type of elements, and it can be any type available in Java.)
 
-**Example:**
+[//]: # ()
+[//]: # (You can add and remove as many elements as you want, and everything is ok!)
 
-    ArrayList<String> brands = new ArrayList<>(Arrays.asList("Apple", "Microsoft", "Nvidia"));
+[//]: # ()
+[//]: # (**Structure**)
 
-You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/learning-java/blob/main/Lists.java)
+[//]: # ()
+[//]: # (    ArrayList<type> variableName = new ArrayList<type>&#40;&#41;;)
 
----
+[//]: # ()
+[//]: # (- Declare ArrayList type first)
 
-## Loops
+[//]: # (- Than write what type of elements its gonna store)
 
-Loops are ways to iterate over a list of any type or even a certain amount of times given by an integer number.
+[//]: # (- Declare the variable name)
 
-But first you might understand how it works and how to write it correctly:
+[//]: # (- And initialize the array)
 
-### For Loop
+[//]: # ()
+[//]: # (You can also initialize it with or without values in it.)
 
-    for (statement 1; statement 2; statement 3) {
-        // code here
-    }
+[//]: # ()
+[//]: # (**Structure:**)
 
-- statement 1 sets the variable before the code starts
-- statement 2 defines a condition for the loop
-- statement 3 increases the variable set in the statement 1 every time the loop runs
+[//]: # ()
+[//]: # (    ArrayList<type> variableName = new ArrayList<type>&#40;Arrays.asList&#40;values, separated, by, comma&#41;&#41;;)
 
-**Example:**
-    
-    int age = 26;
-    for(var i = 0; i < age; i++){
-        System.out.println(i);
-    }
+[//]: # ()
+[//]: # (- Do the same as the first one)
 
-### While Loop
+[//]: # (- Import Arrays from java.util.Arrays)
 
-    while (statement) {
-        // code here
-    }
+[//]: # (- Call the asList&#40;&#41; method)
 
-- statement defines a condition for the loop
+[//]: # (- Pass the values separating them by comma)
 
-**Example:**
-    
-    int y = 0;
-    int x = 10;
-    
-    while(y < x) {
-        System.out.println(y++);
-    }
+[//]: # ()
+[//]: # (**Example:**)
 
-### Do While Loop
+[//]: # ()
+[//]: # (    ArrayList<String> brands = new ArrayList<>&#40;Arrays.asList&#40;"Apple", "Microsoft", "Nvidia"&#41;&#41;;)
 
-    do {
-        // code here
-    } while(statement);
+[//]: # ()
+[//]: # (You can see the arrays file here: [Lists.java]&#40;https://github.com/natanzeraa/learning-java/blob/main/Lists.java&#41;)
 
-- do block defines where the code block to be executed
-- statement defines a condition for the loop
+[//]: # ()
+[//]: # (---)
 
-**Example:**
+[//]: # ()
+[//]: # (## Loops)
 
-int a = 0;
-int b = 10;
+[//]: # ()
+[//]: # (Loops are ways to iterate over a list of any type or even a certain amount of times given by an integer number.)
 
-    do {
-        System.out.println(a++);
-    } while(a < b);
+[//]: # ()
+[//]: # (But first you might understand how it works and how to write it correctly:)
 
+[//]: # ()
+[//]: # (### For Loop)
 
-You can see the loops file here: [Loops.java](https://github.com/natanzeraa/learning-java/blob/main/Loops.java)
+[//]: # ()
+[//]: # (    for &#40;statement 1; statement 2; statement 3&#41; {)
 
----
+[//]: # (        // code here)
 
+[//]: # (    })
 
+[//]: # ()
+[//]: # (- statement 1 sets the variable before the code starts)
 
----
+[//]: # (- statement 2 defines a condition for the loop)
+
+[//]: # (- statement 3 increases the variable set in the statement 1 every time the loop runs)
+
+[//]: # ()
+[//]: # (**Example:**)
+
+[//]: # (    )
+[//]: # (    int age = 26;)
+
+[//]: # (    for&#40;var i = 0; i < age; i++&#41;{)
+
+[//]: # (        System.out.println&#40;i&#41;;)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (### While Loop)
+
+[//]: # ()
+[//]: # (    while &#40;statement&#41; {)
+
+[//]: # (        // code here)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (- statement defines a condition for the loop)
+
+[//]: # ()
+[//]: # (**Example:**)
+
+[//]: # (    )
+[//]: # (    int y = 0;)
+
+[//]: # (    int x = 10;)
+
+[//]: # (    )
+[//]: # (    while&#40;y < x&#41; {)
+
+[//]: # (        System.out.println&#40;y++&#41;;)
+
+[//]: # (    })
+
+[//]: # ()
+[//]: # (### Do While Loop)
+
+[//]: # ()
+[//]: # (    do {)
+
+[//]: # (        // code here)
+
+[//]: # (    } while&#40;statement&#41;;)
+
+[//]: # ()
+[//]: # (- do block defines where the code block to be executed)
+
+[//]: # (- statement defines a condition for the loop)
+
+[//]: # ()
+[//]: # (**Example:**)
+
+[//]: # ()
+[//]: # (int a = 0;)
+
+[//]: # (int b = 10;)
+
+[//]: # ()
+[//]: # (    do {)
+
+[//]: # (        System.out.println&#40;a++&#41;;)
+
+[//]: # (    } while&#40;a < b&#41;;)
+
+[//]: # ()
+[//]: # ()
+[//]: # (You can see the loops file here: [Loops.java]&#40;https://github.com/natanzeraa/learning-java/blob/main/Loops.java&#41;)
+
+[//]: # ()
+[//]: # (---)
+
+[//]: # ()
+[//]: # ()
+[//]: # ()
+[//]: # (---)
 
 [//]: # ()
 [//]: # (## Methods)
