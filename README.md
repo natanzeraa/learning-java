@@ -105,7 +105,7 @@ You can add elements to the java array by doing this:
 
 **Obs:** *In the above example we're using integers, and this type in java just like many other numeric types has a max limit that cannot be exceeded, for example integers can represent numbers from -2147483648 to 2147483647. But this is a topic to [Primitive and Non-Primitive](#types) types.*
 
-You can see the arrays file here: [Arrays.java](https://github.com/natanzeraa/learning-java/blob/main/Arrays.java)
+You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/learning-java/blob/main/Lists.java)
 
 ---
 
@@ -142,7 +142,7 @@ You can also initialize it with or without values in it.
 
     ArrayList<String> brands = new ArrayList<>(Arrays.asList("Apple", "Microsoft", "Nvidia"));
 
-You can see the arrays file here: [Arrays.java](https://github.com/natanzeraa/learning-java/blob/main/Arrays.java)
+You can see the arrays file here: [Lists.java](https://github.com/natanzeraa/learning-java/blob/main/Lists.java)
 
 ---
 
