@@ -3,6 +3,14 @@ import java.util.ArrayList;
 
 public class Lists {
     public static void main(String[] args) {
+    	// Java's native arrays must have a predefined length
+    	
+    	// Starting with default values
+    	// This way, the array length is implicitly defined
+    	String[] strArrWithValues = {"Value 01", "Value 02"};
+    	System.out.println(strArrWithValues.length);
+    	
+    	// Starting with no values
         String[] strArr = new String[2];
         strArr[0] = "Word 01";
         strArr[1] = "Word 02";
@@ -34,10 +42,13 @@ public class Lists {
 
 class ArrayLists{
     public static void main(String[] args){
+    	// Starting with no values
         ArrayList<String> names = new ArrayList<>();
         ArrayList<Integer> ages = new ArrayList<>();
         ArrayList<Float> weights = new ArrayList<>();
         ArrayList<Double> heights = new ArrayList<>();
+        
+        // Starting with values
         ArrayList<String> brands = new ArrayList<>(Arrays.asList("Apple", "Microsoft", "Nvidia"));
 
         names.add("Jon");
