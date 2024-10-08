@@ -1,4 +1,4 @@
-package intermidiate;
+package intermediate;
 
 public class ClassesAndObjects {
     /*
@@ -21,7 +21,7 @@ class Car {
 
 class CarDemo {
     public static void main(String[] args) {
-        Car myCar = new Car();
+        Car myCar = new Car(); // no-args constructor
         myCar.brand = "Ford";
         myCar.model = "Bronco";
         myCar.year = 2021;
@@ -47,7 +47,7 @@ class Dog {
 
 class DogDemo {
     public static void main(String[] args) {
-        Dog myDog = new Dog();
+        Dog myDog = new Dog(); // no-args constructor
 
         myDog.insertDog("Golden Retriever", 45.50);
         myDog.showDog();
@@ -72,7 +72,7 @@ class Drink {
 
 class DrinkDemo {
     public static void main(String[] args) {
-        Drink myDrink = new Drink("Beer", true);
+        Drink myDrink = new Drink("Beer", true); // all-args constructor
         myDrink.showDrink();
     }
 }
