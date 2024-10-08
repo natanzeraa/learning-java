@@ -1,3 +1,5 @@
+package basic;
+
 public class Casting {
 	public static void main(String[] args) {
 		// Casting is how you transform a variable of type A into B

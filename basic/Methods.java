@@ -1,3 +1,5 @@
+package basic;
+
 public class Methods {
     /*
         1. methodOne() is the name of the method.
