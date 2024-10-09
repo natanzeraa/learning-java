@@ -1,4 +1,4 @@
-package intermediate.Oop;
+package intermediate.oop;
 
 public class AdminUser extends User {
 	protected String defaultUsername = "admin";

@@ -1,4 +1,4 @@
-package intermediate.Oop;
+package intermediate.oop;
 
 public class User {
 	private String username;
