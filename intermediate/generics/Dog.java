@@ -7,10 +7,6 @@ public class Dog extends Animal {
         this.breed = breed;
     }
 
-    public String getBreed() {
-        return breed;
-    }
-
     @Override
     public String toString() {
         return "The dog breed is " + breed;
