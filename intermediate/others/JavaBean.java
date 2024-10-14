@@ -1,4 +1,4 @@
-package intermediate;
+package intermediate.others;
 
 import java.io.Serializable;
 
@@ -6,11 +6,13 @@ public class JavaBean implements Serializable {
 	/*
 	 * PEOPLE USE TO MAKE CONFUSION BETWEEN POJO AND JAVA BEANS
 	 * 
-	 * What it needs to be a Java Bean? 1. It must have a no-args constructor 2.
-	 * Properties must be private 3. Public getters and setters 4. Must be
-	 * serializable
+	 * What it needs to be a Java Bean?
+	 * 1. It must have a no-args constructor
+	 * 2. Properties must be private
+	 * 3. Public getters and setters
+	 * 4. Must be serializable
 	 * 
-	 * YOU CAN CHECK THE JAVA BEAN EXAMPLE AT: intermediate.JavaBean.java
+	 * YOU CAN CHECK THE JAVA BEAN EXAMPLE AT: intermediate.others.JavaBean.java
 	 * 
 	 */
 

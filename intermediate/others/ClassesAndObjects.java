@@ -1,4 +1,4 @@
-package intermediate;
+package intermediate.others;
 
 public class ClassesAndObjects {
 	/*
