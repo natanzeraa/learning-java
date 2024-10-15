@@ -2,7 +2,7 @@ package intermediate.collections;
 
 import java.util.*;
 
-public class ListCollection {
+public class Lists {
     public static void main(String[] args) {
 
         // Create list of anything
