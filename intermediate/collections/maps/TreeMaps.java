@@ -6,7 +6,7 @@ import java.util.TreeSet;
 
 /**
  * A TreeMap work a bit different when it comes to ordering the inserted values
- * It naturally "sorts" the values in its natural ordering
+ * It basically "sorts" the values in its natural ordering
  * TreeMaps is a way slower than HasSets or LinkedHashSets because of its "under-the-hood" operations
  * But if you need values ordinated by its natural ordering, just go ahead and choose TreeMap
  */

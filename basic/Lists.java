@@ -12,6 +12,15 @@ public class Lists {
 		String[] strArrWithValues = { "Value 01", "Value 02" };
 		System.out.println(strArrWithValues.length);
 
+		int[] indexes = new int[2];
+		int i = 0;
+		int j = i + 1;
+
+		while(i < strArrWithValues.length) {
+			System.out.println("Ops " + j);
+			i ++;
+		}
+
 		// Starting with no values
 		String[] strArr = new String[2];
 		strArr[0] = "Word 01";
@@ -37,6 +46,7 @@ public class Lists {
 		dblArr[3] = 22.25;
 		dblArr[4] = 79.22;
 		System.out.println(intArr.length);
+
 
 	}
 }

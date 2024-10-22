@@ -74,7 +74,7 @@ public class Stacks {
 
         /*
          * If you try to pop an element at the of the stack and there's no elements left
-         * you'll get (Exception in thread "main" java.util.EmptyStackException),
+         *  
          * because the pop() method returns an object, and if there's no object because you removed it,
          * it'll throw an error.
          * Example:
